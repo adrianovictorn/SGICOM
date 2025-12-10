@@ -14,6 +14,10 @@
 
 
 
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <Content>
     <section class="bg-white rounded-xl">
 		<div class="min-h-[80vh] grid grid-cols-1 place-content-center place-items-center">

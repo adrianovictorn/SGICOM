@@ -3,6 +3,12 @@
 
 </script>
 
+
+<svelte:head>
+    <title>SGICOM</title>
+</svelte:head>
+
+
 <section class="grid grid-rows-[0.2fr_2fr_0.1fr] min-h-screen ">
 	<header class="bg-gray-900 grid grid-cols-3">
 		<div></div>

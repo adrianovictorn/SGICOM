@@ -107,6 +107,12 @@
     })
 </script>
 
+
+<svelte:head>
+    <title>Configurar Tipo</title>
+</svelte:head>
+
+
 <Content>
         <section>
             <form action="" class="grid grid-cols-1 md:grid-cols-2 bg-white p-10 rounded-lg " onsubmit={cadastrarTipoEmpresa}>

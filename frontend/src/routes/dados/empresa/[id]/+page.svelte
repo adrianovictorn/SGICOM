@@ -239,6 +239,12 @@
    
 
 </script>
+
+
+<svelte:head>
+    <title>Dados da Empresa</title>
+</svelte:head>
+
 <Content>
     <main class="bg-white p-5 rounded-lg">
         <section  class="grid grid-cols-1 gap-2">

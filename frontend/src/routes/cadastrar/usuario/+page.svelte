@@ -40,6 +40,12 @@
     }
 </script>
 
+
+<svelte:head>
+    <title>Cadastrar Usuário</title>
+</svelte:head>
+
+
 <Content>
     <section>
         

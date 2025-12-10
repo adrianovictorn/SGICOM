@@ -29,6 +29,12 @@
         codigoIBGE = ""
     }
 </script>
+
+
+<svelte:head>
+    <title>Cadastrar Cidade</title>
+</svelte:head>
+
 <Content> 
     <section class="p-4">
         <form action="" class="bg-white rounded-lg  p-4 " onsubmit={cadastrarCidade}>

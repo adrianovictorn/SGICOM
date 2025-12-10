@@ -57,6 +57,12 @@
         carregarCategoriaPercentual()
     })
 </script>
+
+
+<svelte:head>
+    <title>Indicadores</title>
+</svelte:head>
+
 <Content>
 
     <section class="bg-white rounded-lg p-5 flex flex-col text-center">

@@ -96,6 +96,9 @@
     })
 </script>
 
+<svelte:head>
+    <title>Configurar Categoria</title>
+</svelte:head>
 
 <Content>
 

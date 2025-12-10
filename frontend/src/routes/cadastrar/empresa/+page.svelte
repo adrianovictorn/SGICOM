@@ -267,6 +267,12 @@
    }
 </script>
 
+
+<svelte:head>
+    <title>Cadastrar Empresa</title>
+</svelte:head>
+
+
 <Content>
     <form onsubmit={cadastrarEmpresa} class="bg-white grid grid-cols-1 rounded-xl px-10 py-5">
         <h2 class="p-3 text-[#106F31] text-shadow-2xs font-bold text-2xl ">Empresa</h2>

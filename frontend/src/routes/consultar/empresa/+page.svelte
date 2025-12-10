@@ -159,6 +159,12 @@
     })
 </script>
 
+
+
+<svelte:head>
+    <title>Consultar Empresa</title>
+</svelte:head>
+
 <Content> 
     <section class="bg-white rounded-lg">
         <form action="" >
