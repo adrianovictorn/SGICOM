@@ -27,9 +27,6 @@
     }
 </script>
 
-<svelte:head>
-    <title>Login</title>
-</svelte:head>
 
 
 <div class="bg-neutral-200 hover:bg-[rgb(37,99,235)]h-screen transition-colors duration-300">
