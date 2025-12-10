@@ -2,7 +2,7 @@
 
 services:
   postgres:
-    image: 'postgres:latest'
+    image: 'postgres:17'
     container_name: mercado-municipal-postgres
     environment:
       POSTGRES_DB: empresadb__mercado
