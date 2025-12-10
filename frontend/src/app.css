@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import '@fontsource/fira-mono';
+@plugin '@tailwindcss/forms';
+
+label {
+	@apply text-[#94AECA] font-bold text-base;
+}
+
+input {
+    @apply  border-[#073216] rounded-lg
+}
+
+select {
+    @apply border-[#073216] rounded-lg
+}
+
+p{
+    @apply text-[#0f2037]
+}

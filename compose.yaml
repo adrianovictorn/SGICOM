@@ -1,0 +1,52 @@
+
+
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: mercado-municipal-postgres
+    environment:
+      POSTGRES_DB: empresadb__mercado
+      POSTGRES_USER: adrianovictor159@
+      POSTGRES_PASSWORD: Vitor159@
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-net
+
+  backend:
+    build:
+      context: /backend          
+      
+      dockerfile: Dockerfile.backend     
+    container_name: mercado-municipal-backend
+    depends_on:
+      - postgres
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      POSTGRES_DB: empresadb__mercado
+      POSTGRES_USER: adrianovictor159@
+      POSTGRES_PASSWORD: Vitor159@
+    ports:
+      - "8080:8080"
+    networks:
+      - app-net
+  
+  frontend:
+    build:
+      context: /frontend
+      dockerfile: Dockerfile.frontend
+    container_name: mercado-municipal-frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - app-net
+
+volumes:
+  postgres_data:
+
+networks:
+  app-net:

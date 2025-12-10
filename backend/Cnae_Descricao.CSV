@@ -1,0 +1,927 @@
+id;codigo;descricao
+1;6201-5/00;"Desenvolvimento  de  programas  de  computador
+sob encomenda"
+2;6190-6/01;"Provedores      de      acesso      às      redes      de
+comunicações"
+3;1830-0/03;Reprodução de Software em qualquer suporte
+4;6311-9/00;"Tratamento  de  dados,  provedores  de  serviços de   aplicação   e   serviços   de   hospedagem   na
+internet"
+5;6202-3/00;"Desenvolvimento e licenciamento de programas
+de computador customizáveis"
+6;6203-1/00;Desenvolvimento e licenciamento de programas de computador não-customizáveis
+7;6204-0/00;Consultoria em tecnologia da informação
+8;6209-1/00;Suporte  técnico,  manutenção  e  outros  serviços em tecnologia da informação
+9;6319-4/00;"Portais,   provedores   de   conteúdo   e   outros
+serviços de informação na internet"
+10;7210-0/00;"Pesquisa  e  desenvolvimento  experimental  em
+ciências físicas e naturais"
+11;7220-7/00;"Pesquisa  e  desenvolvimento  experimental  em
+ciências sociais e humanas"
+12;8211-3/00;Serviços   combinados   de   escritório   e   apoio administrativo
+13;8230-0/02;Casas de festas e eventos
+14;9003-5/00;Gestão    de    espaços    para    artes    cênicas, espetáculos e outras atividades artísticas
+15;3520-4/02;Distribuição de combustíveis gasosos por redes urbanas
+16;3514-0/00;Distribuição de energia elétrica
+17;4911-6/00;Transporte ferroviário de carga
+18;5221-4/00;Concessionárias  de  rodovias,  pontes,  túneis  e serviços relacionados
+19;4399-1/02;"Montagem   e   desmontagem   de   andaimes   e
+outras estruturas temporárias"
+20;4399-1/04;"Serviços    de    operação    e    fornecimento    de equipamentos  para  transporte  e  elevação  de
+cargas e pessoas para uso em obras"
+21;7732-2/02;Aluguel de andaimes
+22;7739-0/03;Aluguel    de    palcos,    coberturas    e    outras estruturas de uso temporário, exceto andaimes
+23;8630-5/02;Atividade   médica   ambulatorial   com   recursos para realização de exames complementares
+24;8630-5/03;"Atividade     médica     ambulatorial     restrita     a
+consultas"
+25;8630-5/99;"Atividades     de     atenção     ambulatorial     não
+especificadas anteriormente"
+26;8640-2/01;Laboratórios de anatomia patológica e citológica
+27;8640-2/02;Laboratórios clínicos
+28;8640-2/04;Serviços de tomografia
+29;8640-2/05;Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia
+30;8640-2/06;Serviços de ressonância magnética
+31;8640-2/07;"Serviços de diagnóstico por imagem sem uso de radiação      ionizante,      exceto      ressonância
+magnética"
+32;8640-2/08;Serviços  de  diagnóstico  por  registro  gráfico  - ECG, EEG e outros exames análogos
+33;8640-2/09;Serviços  de  diagnóstico  por  métodos  ópticos  - endoscopia e outros exames análogos
+34;8640-2/10;Serviços de quimioterapia
+35;8640-2/11;Serviços de radioterapia
+36;8640-2/99;"Atividades   de   serviços   de   complementação diagnóstica   e   terapêutica   não   especificadas
+anteriormente"
+37;8610-1/01;"Atividades   de   atendimento   hospitalar,   exceto pronto-socorro  e  unidades  para  atendimento  a
+urgências"
+38;8610-1/02;"Atividades de atendimento em  pronto-socorro e unidades    hospitalares    para    atendimento    a
+urgências"
+39;8630-5/01;Atividade   médica   ambulatorial   com   recursos para realização de procedimentos cirúrgicos
+40;8630-5/06;Serviços de vacinação e imunização humana
+41;8640-2/03;Serviços de diálise e nefrologia
+42;8640-2/13;Serviços de litotripsia
+43;8650-0/99;"Atividades  de  profissionais  da  área  de  saúde
+não especificadas anteriormente"
+44;8690-9/01;"Atividades      de      práticas      integrativas      e
+complementares em saúde humana"
+45;8690-9/03;Atividades de acumputura
+46;8650-0/01;Atividades de enfermagem
+47;4771-7/02;Comércio  varejista  de  produtos  farmacêuticos, com manipulação de fórmulas
+48;4771-7/03;"Comércio  varejista  de  produtos  farmacêuticos
+homeopáticos"
+49;8650-0/04;Atividades de fisioterapia
+50;8650-0/05;Atividades de terapia ocupacional
+51;8650-0/06;Atividades de fonoaudiologia
+52;8640-2/12;Serviços de hemoterapia
+53;8650-0/07;"Atividades   de   terapia   de   nutrição   enteral   e
+parenteral"
+54;8690-9/99;"Outras  atividades  de  atenção  à  saúde  humana
+não especificadas anteriormente"
+55;8650-0/02;Atividades de profissionais da nutrição
+56;8630-5/04;Atividade odontológica
+57;3250-7/03;"Fabricação   de   aparelhos   e   utensílios   para correção    de    defeitos    físicos    e    aparelhos
+ortopédicos em geral sob encomenda"
+58;3250-7/06;Serviços de prótese dentária
+59;8650-0/03;Atividades de psicologia e psicanálise
+60;8711-5/01;Clínicas e residências geriátricas
+61;8711-5/02;Instituições de longa permanência para idosos
+62;8711-5/03;"Atividades  de  assistência  a  deficientes  físicos,
+imunodeprimidos e convalescentes"
+63;8711-5/04;"Centros de apoio a pacientes com câncer e com
+AIDS"
+64;8711-5/05;Condomínios residenciais para idosos
+65;8720-4/01;"Atividades      de      centros      de      assistência
+psicossocial"
+66;8730-1/01;Orfanatos
+67;8730-1/02;Albergues assistencias
+68;8720-4/99;"Atividades de assistência psicossocial e à saúde a portadores de distúrbios psíquicos, deficiência mental       e       dependência       química       não
+especificadas anteriormente"
+69;8730-1/99;"Atividades  de  assistência  social  prestadas  em
+residências     coletivas     e     particulares     não especificadas anteriormente"
+70;8630-5/07;Atividades de reprodução humana assistida
+71;8640-2/14;"Serviços   de   bancos   de   células   e   tecidos
+humanos"
+72;8690-9/02;Atividades de bancos de leite humano
+73;8621-6/01;UTI móvel
+74;8621-6/02;"Serviços  móveis  de  atendimento  a  urgências,
+exceto por UTI móvel"
+75;8622-4/00;Serviços  de  remoção  de  pacientes,  exceto  os serviços móveis de atendimento a urgências
+76;8712-3/00;Atividades de fornecimento de infra-estrutura de apoio e assistência a paciente no domicílio
+77;6550-2/00;Planos de saúde
+78;7490-1/03;"Serviços   de   agronomia   e   de   consultoria   às
+atividades agrícolas e pecuárias"
+79;7500-1/00;Atividades veterinárias
+80;0162-8/01;Serviço de inseminação artificial em animais
+81;8011-1/02;Serviços de adestramento de cães de guarda
+82;9609-2/03;"Alojamento,    higiene    e    embelezamento    de
+animais"
+83;0162-8/02;Serviço de Tosquiamento de Ovinos
+84;0162-8/03;Serviço de Manejo de Animais
+85;0162-8/99;Atividade de Apoio a Pecuária não Especificadas Anteriormente
+86;8690-9/04;Atividades de podologia
+87;9602-5/01;Cabeleireiros
+88;9602-5/02;Outras atividades de tratamento de beleza
+89;9609-2/01;Clínicas de estética e similares
+90;9609-2/06;Serviços de tatuagem e colocação de piercing
+91;9609-2/99;"Outras   atividades   de   serviços   pessoais   não
+especificadas anteriormente"
+92;9609-2/05;Atividades de sauna e banhos
+93;8592-9/01;Ensino de dança
+94;8591-1/00;Ensino de esportes
+95;9313-1/00;Atividades de condicionamento físico
+96;2391-5/01;"BRITAMENTO      DE      PEDRAS,      EXCETO
+ASSOCIADO À EXTRAÇÃO"
+97;7119-7/01;Serviços de cartografia, topografia e geodésia
+98;7119-7/02;Atividades de estudos geológicos
+99;7111-1/00;Serviços de arquitetura
+100;7112-0/00;Serviços de engenharia
+101;2330-3/05;PREPARAÇÃO  DE  MASSA  DE  CONCRETO  E AGAMASSA PARA CONSTRUÇÃO
+102;4211-1/01;Construção de rodovias e ferrovias
+103;4211-1/02;Pintura para sinalização em pistas rodoviárias e aeroportos
+104;4221-9/01;Construção   de   barragens   e   represas   para geração de energia elétrica
+105;4221-9/02;Construção de estações e redes de distribuição de energia elétrica
+106;4221-9/04;Construção     de     estações     e     redes     de telecomunicações
+107;4222-7/01;Construção de redes de abastecimento de água, coleta   de   esgoto   e   construções   correlatas, exceto obras de irrigação
+108;4222-7/02;Obras de irrigação
+109;4292-8/01;Montagem de estruturas metálicas
+110;4292-8/02;Obras de montagem industrial
+111;4299-5/01;Construção     de     instalações     esportivas     e recreativas
+112;4311-8/02;Preparação de canteiro e limpeza de terreno
+113;4322-3/01;Instalações hidráulicas, sanitárias e de gás
+114;4322-3/02;Instalação  e  manutenção  de  sistemas  centrais de ar condicionado, de ventilação e refrigeração
+115;4322-3/03;Instalações   de   sistema   de   prevenção   contra incêndio
+116;4329-1/03;Instalação,     manutenção     e     reparação     de elevadores, escadas e esteiras rolantes, exceto de fabricação própria
+117;4330-4/01;Impermeabilização em obras de engenharia civil
+118;4330-4/03;Obras de acabamento em gesso e estuque
+119;4330-4/04;Serviços de pintura de edifícios em geral
+120;4330-4/05;Aplicação  de  revestimentos  e  de  resinas  em interiores e exteriores
+121;4399-1/01;Administração de obras
+122;4399-1/03;Obras de alvenaria
+123;4399-1/05;Perfuração e construção de poços de água
+124;3321-0/00;Instalação    de    máquinas    e    equipamentos industriais
+125;4120-4/00;Construção de edifícios
+126;4212-0/00;Construção de obras-de-arte especiais
+127;4213-8/00;Obras de urbanização - ruas, praças e calçadas
+128;4223-5/00;Construção  de  redes  de  transportes  por  dutos, exceto para água e esgoto
+129;4299-5/99;Outras     obras     de     engenharia     civil     não especificadas anteriormente
+130;4312-6/00;Perfurações e sondagens
+131;4313-4/00;Obras de terraplenagem
+132;4319-3/00;Serviços    de    preparação    do    terreno    não especificados anteriormente
+133;4321-5/00;Instalação e manutenção elétrica
+134;4329-1/99;Outras  obras  de  instalações  em  construções não especificadas anteriormente
+135;4330-4/99;Outras obras de acabamento da construção
+136;4391-6/00;Obras de fundações
+137;4399-1/99;Serviços   especializados   para   construção   não especificados anteriormente
+138;4311-8/01;Demolição de edifícios e outras estruturas
+139;4221-9/03;Manutenção de redes de distribuição de energia elétrica
+140;4221-9/05;Manutenção     de     estações     e     redes     de telecomunicações
+141;9102-3/02;Restauração    e    conservação    de    lugares   e prédios históricos
+142;4330-4/02;Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material
+143;4329-1/05;Tratamentos térmicos, acústicos ou de vibração
+144;3831-9/01;Recuperação de sucatas de alumínio
+145;3839-4/01;Usinas de compostagem
+146;3811-4/00;Coleta de resíduos não-perigosos
+147;3812-2/00;Coleta de resíduos perigosos
+148;3821-1/00;Tratamento   e   disposição   de   resíduos   não- perigosos
+149;3822-0/00;Tratamento e disposição de resíduos perigosos
+150;3831-9/99;Recuperação   de   materiais   metálicos,   exceto alumínio
+151;3832-7/00;Recuperação de materiais plásticos
+152;3839-4/99;Recuperação   de   materiais   não   especificados anteriormente
+153;8129-0/00;Atividades    de    limpeza    não    especificadas anteriormente
+154;3702-9/00;Atividades   relacionadas   a   esgoto,   exceto   a gestão de redes
+155;8121-4/00;Limpeza em prédios e em domicílios
+156;7410-2/02;Decoração de interiores
+157;8130-3/00;Atividades paisagísticas
+158;0161-0/01;"Serviço  de  pulverização  e  controle  de  pragas
+agrícolas"
+159;8122-2/00;Imunização e controle de pragas urbanas
+160;0161-0/03;"SERVICO  DE  PREPARACAO  DE  TERRENO,
+CULTIVO E COLHEITA"
+161;0220-9/06;Conservação de florestas nativas
+162;0230-6/00;Atividades de apoio à produção florestal
+163;3900-5/00;"Descontaminação  e  outros  serviços  de  gestão
+de resíduos"
+164;4291-0/00;Obras portuárias, marítimas e fluviais
+165;7119-7/99;Atividades técnicas relacionadas à engenharia e arquitetura não especificadas anteriormente
+166;7490-1/02;Escafandria e mergulho
+167;0910-6/00;Atividades de apoio à extração de petróleo e gás natural
+168;0990-4/01;ATIVIDADES   DE   APOIO   A   EXTRACAO   DE MINERIO DE FERRO
+169;0990-4/02;ATIVIDADES   DE   APOIO   A   EXTRACAO   DE MINERAIS METÁLICOS NÃO-FERROSOS
+170;0990-4/03;ATIVIDADES   DE   APOIO   À   EXTRAÇÃO   DE MINERAIS NÃO-METÁLICOS
+171;7490-1/99;"Outras   atividades   profissionais,   científicas   e
+técnicas não especificadas anteriormente"
+172;8511-2/00;Educação infantil – creche
+173;8512-1/00;Educação infantil - pré-escola
+174;8513-9/00;Ensino fundamental
+175;8520-1/00;Ensino médio
+176;8531-7/00;Educação superior – graduação
+177;8532-5/00;"Educação    superior    -    graduação    e    pós-
+graduação"
+178;8533-3/00;Educação superior -  pós-graduação e extensão
+179;8541-4/00;Educação profissional de nível técnico
+180;8542-2/00;Educação profissional de nível tecnológico
+181;8550-3/02;"Atividades  de  apoio  à  educação,  exceto  caixas
+escolares"
+182;8592-9/02;Ensino de artes cênicas, exceto dança
+183;8592-9/03;Ensino de música
+184;8599-6/01;Formação de condutores
+185;8599-6/02;Cursos de pilotagem
+186;8599-6/03;Treinamento em informática
+187;8599-6/04;"Treinamento em desenvolvimento profissional e
+gerencial"
+188;8599-6/05;Cursos preparatórios para concursos
+189;8592-9/99;"Ensino   de   arte   e   cultura   não   especificado
+anteriormente"
+190;8593-7/00;Ensino de idiomas
+191;8599-6/99;"Outras  atividades  de  ensino  não  especificadas
+anteriormente"
+192;9312-3/00;"CLUBES       SOCIAIS,        ESPORTIVOS       E
+SIMILARES"
+193;5510-8/01;Hotéis
+194;5510-8/02;Apart-hotéis
+195;5510-8/03;Motéis
+196;5590-6/01;Albergues, exceto assistenciais
+197;5590-6/02;Campings
+198;5590-6/03;Pensões (alojamento)
+199;5590-6/99;Outros       alojamentos       não       especificados anteriormente
+200;4929-9/03;Organização     de     excursões     em     veículos rodoviários próprios, municipal
+201;4929-9/04;"Organização     de     excursões     em     veículos rodoviários            próprios,            intermunicipal,
+interestadual e internacional"
+202;7911-2/00;Agências de viagens
+203;7912-1/00;Operadores turísticos
+204;7990-2/00;Serviços   de   reservas   e   outros   serviços   de turismo não especificados anteriormente
+205;6612-6/03;Corretoras de câmbio
+206;6622-3/00;Corretores e agentes de seguros, de planos de previdência complementar e de saúde
+207;6612-6/01;Corretoras de títulos e valores mobiliários
+208;6612-6/02;Distribuidoras de títulos e valores mobiliários
+209;6612-6/04;Corretoras de contratos de mercadorias
+210;6612-6/05;"Agentes    de    investimentos    em    aplicações
+financeiras"
+211;7490-1/04;"Atividades de intermediação e agenciamento de serviços     e     negócios     em     geral,     exceto
+imobiliários"
+212;7490-1/05;"Agenciamento  de  profissionais  para  atividades
+esportivas, culturais e artísticas"
+213;8299-7/05;"Serviços    de    levantamento    de    fundos    sob
+contrato"
+214;9609-2/02;Agências matrimoniais
+215;6619-3/99;"Outras    atividades    auxiliares    dos    serviços
+financeiros não especificadas anteriormente"
+216;6022-5/02;"Atividades     relacionadas     à     televisão     por
+assinatura, exceto programadoras"
+217;6911-7/03;Agente de propriedade industrial
+218;5811-5/00;Edição de livros
+219;4512-9/02;Comércio     sob     consignação     de     veículos automotores
+220;5250-8/03;Agenciamento    de    cargas,    exceto    para    o transporte marítimo
+221;6821-8/01;Corretagem na compra e venda e avaliação de imóveis
+222;6821-8/02;Corretagem no aluguel de imóveis
+223;8299-7/02;Emissão  de  vales-alimentação,  vales-transporte e similares
+224;5232-0/00;Atividades de agenciamento marítimo
+225;6391-7/00;Agências de notícias
+226;7312-2/00;"Agenciamento   de   espaços   para   publicidade,
+exceto em veículos de comunicação"
+227;4512-9/01;"Representantes    comerciais    e    agentes    do
+comércio de veículos automotores"
+228;4530-7/06;"Representantes    comerciais    e    agentes    do comércio de peças e acessórios novos e usados
+para veículos automotores"
+229;4542-1/01;"Representantes    comerciais    e    agentes    do comércio de motocicletas e motonetas, peças e
+acessórios"
+230;4618-4/01;"Representantes    comerciais    e    agentes    do comércio    de    medicamentos,    cosméticos    e
+produtos de perfumaria"
+231;4618-4/02;"Representantes    comerciais    e    agentes    do comércio  de  instrumentos  e  materiais  odonto-
+médico-hospitalares"
+232;4618-4/03;"Representantes    comerciais    e    agentes    do comércio     de     jornais,     revistas     e     outras
+publicações"
+233;6619-3/03;"REPRESENTACOES            DE            BANCOS
+ESTRANGEIROS"
+234;4611-7/00;"Representantes    comerciais    e    agentes    do
+comércio    de    matérias-primas    agrícolas    e animais vivos"
+235;4612-5/00;"Representantes    comerciais    e    agentes    do
+comércio  de  combustíveis,  minerais,  produtos siderúrgicos e químicos"
+236;4613-3/00;"Representantes    comerciais    e    agentes    do
+comércio  de  madeira,  material  de  construção e ferragens"
+237;4614-1/00;"Representantes    comerciais    e    agentes    do
+comércio      de      máquinas,      equipamentos, embarcações e aeronaves"
+238;4615-0/00;"Representantes    comerciais    e    agentes    do comércio de eletrodomésticos, móveis e artigos
+de uso doméstico"
+239;4616-8/00;"Representantes    comerciais    e    agentes    do comércio   de   têxteis,   vestuário,   calçados   e
+artigos de viagem"
+240;4617-6/00;"Representantes    comerciais    e    agentes    do comércio  de  produtos  alimentícios,  bebidas  e
+fumo"
+241;4618-4/99;"Outros representantes comerciais e agentes do comércio    especializado    em    produtos    não
+especificados anteriormente"
+242;4619-2/00;"Representantes    comerciais    e    agentes    do comércio    de    mercadorias    em    geral    não
+especializado"
+243;5913-8/00;"Distribuição   cinematográfica,   de   vídeo   e   de
+programas de televisão"
+244;5223-1/00;Estacionamento de veículos
+245;5240-1/99;"Atividades   auxiliares   dos   transportes   aéreos, exceto  operação  dos  aeroportos  e  campos  de
+aterrissagem"
+246;9329-8/99;"Outras   atividades   de   recreação   e   lazer   não
+especificadas anteriormente"
+247;8011-1/01;Atividades de vigilância e segurança privada
+248;8020-0/00;"Atividades  de  monitoramento  de  sistemas  de
+segurança"
+249;5229-0/99;"Outras   atividades   auxiliares   dos   transportes
+terrestres não especificadas anteriormente"
+250;4930-2/04;Transporte rodoviário de mudanças
+251;5211-7/01;Armazéns gerais - emissão de warrant
+252;5211-7/02;Guarda-móveis
+253;5231-1/02;Operações de terminais
+254;5250-8/04;Organização logística do transporte de carga
+255;5211-7/99;"Depósitos de mercadorias para terceiros, exceto
+armazéns gerais e guarda-móveis"
+256;5212-5/00;Carga e descarga
+257;9001-9/01;Produção teatral
+258;9001-9/99;"Artes     cênicas,     espetáculos     e     atividades complementares            não            especificados
+anteriormente"
+259;5914-6/00;Atividades de exibição cinematográfica
+260;9001-9/04;"Produção     de     espetáculos     circenses,     de
+marionetes e similares"
+261;9103-1/00;"Atividades   de   jardins   botânicos,   zoológicos, parques nacionais, reservas ecológicas e áreas
+de proteção ambiental"
+262;9321-2/00;Parques de diversão e parques temáticos
+263;9329-8/01;"Discotecas,   danceterias,   salões   de   dança   e
+similares"
+264;9001-9/02;Produção musical
+265;9001-9/03;Produção de espetáculos de dança
+266;8230-0/01;"Serviços de  organização de  feiras,  congressos,
+exposições e festas"
+267;9329-8/02;Exploração de boliches
+268;9329-8/03;Exploração de jogos de sinuca, bilhar e similares
+269;9329-8/04;Exploração de jogos eletrônicos recreativos
+270;9200-3/99;"Exploração  de  jogos  de  azar  e  apostas  não
+especificados anteriormente"
+271;9001-9/05;"Produção      de      espetáculos      de      rodeios,
+vaquejadas e similares"
+272;9200-3/02;Exploração de apostas em corridas de cavalos
+273;9319-1/01;Produção e promoção de eventos esportivos
+274;9319-1/99;"Outras  atividades  esportivas  não  especificadas
+anteriormente"
+275;5911-1/99;Atividades   de   produção   cinematográfica,   de vídeos   e   de   programas   de   televisão   não especificadas anteriormente
+276;6021-7/00;Atividades de televisão aberta
+277;9001-9/06;Atividades de sonorização e de iluminação
+278;9493-6/00;"Atividades de organizações associativas ligadas
+à cultura e à arte"
+279;1830-0/01;"REPRODUCAO   DE   SOM   EM   QUALQUER
+SUPORTE"
+280;5912-0/01;Serviços de dublagem
+281;5912-0/02;"Serviços   de   mixagem   sonora   em   produção
+audiovisual"
+282;5920-1/00;"Atividades de gravação de som e de edição de
+música"
+283;5911-1/01;Estúdios cinematográficos
+284;9609-2/04;"Exploração  de  máquinas  de  serviços  pessoais
+acionados po moeda"
+285;1830-0/02;"REPRODUCAO   DE   VIDEO   EM   QUALQUER
+SUPORTE"
+286;5912-0/99;Atividades de pós-produção cinematográfica, de vídeos   e   de   programas   de   televisão   não especificadas anteriormente
+287;7420-0/01;"Atividades  de  produção  de  fotografias,  exceto
+aérea e submarina"
+288;7420-0/02;"Atividades de produção de fotografias aéreas e
+submarinas"
+289;7420-0/03;Laboratórios fotográficos
+290;7420-0/04;Filmagem de festas e eventos
+291;8219-9/01;Fotocópias
+292;7420-0/05;Serviços de microfilmagem
+293;1741-9/01;Fabricação de formulários contínuos
+294;1811-3/01;Impressão de jornais
+295;1811-3/02;"Impressão     de     livros,     revistas     e     outras
+publicações periódicas"
+296;1812-1/00;Impressão de material de segurança
+297;1813-0/01;Impressão de material para uso publicitário
+298;1813-0/99;Impressão de material para outros usos
+299;1821-1/00;Serviços de pré-impressão
+300;1822-9/01;Serviços de encadernação e plastificação
+301;2930-1/03;FABRICAÇÃO DE CABINES, CARROCERIAS E REBOQUES     PARA     OUTROS     VEÍCULOS AUTOMOTORES,   EXCETO   CAMINHÕES   E ÔNIBUS
+302;3312-1/02;Manutenção    e    reparação    de    aparelhos    e instrumentos de medida, teste e controle
+303;3312-1/03;Manutenção     e     reparação     de     aparelhos eletromédicos        e        eletroterapêuticos        e equipamentos de irradiação
+304;3312-1/04;Manutenção  e  reparação  de  equipamentos  e instrumentos ópticos
+305;3313-9/01;Manutenção     e     reparação     de     geradores, transformadores e motores elétricos
+306;3313-9/02;Manutenção    e    reparação    de    baterias    e acumuladores elétricos, exceto para veículos
+307;3314-7/01;Manutenção e reparação de máquinas motrizes não-elétricas
+308;3314-7/02;Manutenção   e   reparação   de   equipamentos hidráulicos e pneumáticos, exceto válvulas
+309;3314-7/03;Manutenção e reparação de válvulas industriais
+310;3314-7/04;Manutenção e reparação de compressores
+311;3314-7/05;Manutenção  e  reparação  de  equipamentos  de transmissão para fins industriais
+312;3314-7/06;Manutenção     e     reparação     de     máquinas, aparelhos   e   equipamentos   para   instalações térmicas
+313;3314-7/07;Manutenção    e    reparação    de    máquinas    e aparelhos de refrigeração e ventilação para uso industrial e comercial
+314;3314-7/08;Manutenção     e     reparação     de     máquinas, equipamentos  e  aparelhos  para  transporte  e elevação de cargas
+315;3314-7/09;Manutenção   e   reparação   de   máquinas   de escrever, calcular e de outros equipamentos não eletrônicos para escritório
+316;3314-7/10;Manutenção    e    reparação    de    máquinas    e equipamentos para uso geral não especificados anteriormente
+317;3314-7/11;Manutenção    e    reparação    de    máquinas    e equipamentos para agricultura e pecuária
+318;3314-7/12;Manutenção e reparação de tratores agrícolas
+319;3314-7/13;Manutenção     e     reparação     de     máquinas- ferramenta
+320;3314-7/14;Manutenção    e    reparação    de    máquinas    e equipamentos para a prospecção e extração de petróleo
+321;3314-7/15;Manutenção    e    reparação    de    máquinas    e equipamentos  para  uso  na  extração  mineral, exceto na extração de petróleo
+322;3314-7/16;Manutenção  e  reparação  de   tratores,  exceto agrícolas
+323;3314-7/17;Manutenção    e    reparação    de    máquinas    e equipamentos  de  terraplenagem,  pavimentação e construção, exceto tratores
+324;3314-7/18;Manutenção  e  reparação  de  máquinas  para  a indústria      metalúrgica,      exceto      máquinas- ferramenta
+325;3314-7/19;Manutenção    e    reparação    de    máquinas    e equipamentos  para  as  indústrias  de  alimentos, bebidas e fumo
+326;3314-7/20;Manutenção    e    reparação    de    máquinas    e equipamentos    para    a    indústria    têxtil,    do vestuário, do couro e calçados
+327;3314-7/21;Manutenção    e    reparação    de    máquinas    e aparelhos  para  a  indústria  de  celulose,  papel e papelão e artefatos
+328;3314-7/22;Manutenção    e    reparação    de    máquinas    e aparelhos para a indústria do plástico
+329;3316-3/01;Manutenção  e  reparação  de  aeronaves,  exceto a manutenção na pista
+330;3316-3/02;Manutenção de aeronaves na pista
+331;3317-1/01;Manutenção   e   reparação   de   embarcações   e estruturas flutuantes
+332;3317-1/02;Manutenção e reparação de embarcações para esporte e lazer
+333;4329-1/04;Montagem     e     instalação     de     sistemas     e equipamentos  de  iluminação  e  sinalização  em vias públicas, portos e aeroportos
+334;4751-2/02;Recarga  de  cartuchos  para  equipamentos  de informática
+335;9529-1/01;Reparação  de  calçados,  bolsas  e  artigos  de viagem
+336;9529-1/03;Reparação de relógios
+337;9529-1/04;Reparação   de   bicicletas,   triciclos   e   outros veículos não-motorizados
+338;9529-1/05;Reparação de artigos do mobiliário
+339;9529-1/06;Reparação de jóias
+340;3311-2/00;Manutenção      e      reparação      de      tanques, reservatórios metálicos e caldeiras, exceto para veículos
+341;3313-9/99;Manutenção     e     reparação     de     máquinas, aparelhos       e       materiais       elétricos       não especificados anteriormente
+342;3314-7/99;Manutenção e reparação de outras máquinas e equipamentos     para     usos     industriais     não especificados anteriormente
+343;3315-5/00;Manutenção e reparação de veículos ferroviários
+344;3319-8/00;Manutenção  e  reparação  de  equipamentos  e produtos não especificados anteriormente
+345;4520-0/01;Serviços de manutenção e reparação mecânica de veículos automotores
+346;4520-0/03;Serviços de manutenção e reparação elétrica de veículos automotores
+347;4520-0/04;Serviços  de  alinhamento  e  balanceamento  de veículos automotores
+348;4520-0/05;Serviços  de  lavagem,  lubrificação  e  polimento de veículos automotores
+349;4520-0/07;Serviços de instalação, manutenção e reparação de acessórios para veículos automotores
+350;4543-9/00;Manutenção   e   reparação   de   motocicletas   e motonetas
+351;6190-6/99;Outras   atividades   de   telecomunicações   não especificadas anteriormente
+352;9512-6/00;Reparação  e  manutenção  de  equipamentos  de comunicação
+353;9521-5/00;Reparação   e   manutenção   de   equipamentos eletroeletrônicos de uso pessoal e doméstico
+354;9529-1/99;Reparação  e  manutenção  de  outros  objetos  e equipamentos    pessoais    e    domésticos    não especificados anteriormente
+355;9511-8/00;"Reparação  e  manutenção  de  computadores  e
+de equipamentos periféricos"
+356;2950-6/00;"Recondicionamento  e  recuperação  de  motores
+para veículos automotores"
+357;2212-9/00;Reforma de pneumáticos usados
+358;4520-0/06;"Serviços     de     borracharia     para     veículos
+automotores"
+359;2391-5/02;APARELHAMENTO      DE      PEDRAS      PARA CONSTRUÇÃO,    EXCETO    ASSOCIADO    À EXTRAÇÃO
+360;2391-5/03;APARELHMANTO  DE  PLACAS  E  EXECUÇÃO DE  TRABALHOS  EM  MÁRMORE,  GRANITO, ARDÓSIA E OUTRAS PEDRAS
+361;2599-3/02;Serviços de corte e dobra de metais
+362;2722-8/02;Recondicionamento de baterias e acumuladores para veículos automotores
+363;3250-7/09;Serviços de laboratórios ópticos
+364;9002-7/02;Restauração de obras de arte
+365;1340-5/01;ESTAMPARIA  E  TEXTURIZACAO   EM  FIOS, TECIDOS,  ARTEFATOS  TEXTEIS  E  PECAS DO VESTUARIO
+366;2539-0/01;Serviços de usinagem, tornearia e solda
+367;2539-0/02;Serviços   de   tratamento   e   revestimento   em metais
+368;4520-0/02;Serviços  de  lanternagem  ou  funilaria  e  pintura de veículos automotores
+369;8292-0/00;Envasamento e empacotamento sob contrato
+370;4329-1/02;Instalação  de  equipamentos  para  orientação  à navegação marítima, fluvial e lacustre
+371;3329-5/99;Instalação     de     outros     equipamentos     não especificados anteriormente
+372;1629-3/01;"Fabricação  de  artefatos  diversos  de  madeira,
+exceto móveis"
+373;1822-9/99;"Serviços    de    acabamentos    gráficos,    exceto
+encadernação e plastificação"
+374;1340-5/99;Outros serviços de acabamento em fios, tecidos, artefatos têxteis e peças do vestuário
+375;1411-8/02;Facção de roupas íntimas
+376;1412-6/02;"Confecção, sob medida, de peças do vestuário,
+exceto roupas íntimas"
+377;1412-6/03;"Facção  de  peças  do  vestuário,  exceto  roupas
+íntimas"
+378;1413-4/01;"CONFECCAO  DE  ROUPAS  PROFISSIONAIS,
+EXCETO SOB MEDIDA"
+379;1413-4/02;Confecção, sob medida, de roupas profissionais
+380;1413-4/03;Facção de roupas profissionais
+381;1531-9/02;Acabamento de calçados de couro sob contrato
+382;9601-7/01;Lavanderias
+383;9601-7/02;Tinturarias
+384;9601-7/03;Toalheiros
+385;1340-5/02;Alvejamento,   tingimento   e   torção   em   fios, tecidos, artefatos têxteis e peças do vestuário
+386;4520-0/08;Serviços de capotaria
+387;2399-1/01;"Decoração,  lapidação,  gravação,  vitrificação  e outros  trabalhos  em  cerâmica,  louça,  vidro  e
+cristal"
+388;2599-3/01;"Serviços  de  confecção  de  armações  metálicas
+para a construção"
+389;3329-5/01;"Serviços  de  montagem  de  móveis  de  qualquer
+material"
+390;1622-6/99;"Fabricação de outros artigos de carpintaria para
+construção"
+391;2512-8/00;Fabricação de esquadrias de metal
+392;2542-0/00;"Fabricação   de   artigos   de   serralheria,   exceto
+esquadrias"
+393;6424-7/01;BANCOS COOPERATIVOS
+394;6424-7/02;COOPERATIVAS CENTRAIS DE CREDITO
+395;6424-7/03;COOPERATIVAS DE CREDITO MUTUO
+396;6424-7/04;COOPERATIVAS DE CREDITO RURAL
+397;6435-2/03;COMPANHIAS HIPOTECARIAS
+398;6470-1/01;FUNDOS     DE     INVESTIMENTO,     EXCETO PREVIDENCIÁRIOS E IMOBILIÁRIOS
+399;6470-1/02;FUNDOS                DE                INVESTIMENTO PREVIDENCIARIOS
+400;6470-1/03;FUNDOS DE INVESTIMENTO IMOBILIARIOS
+401;6499-9/01;CLUBES DE INVESTIMENTO
+402;6499-9/02;SOCIEDADES DE INVESTIMENTO
+403;6619-3/05;OPERADORAS DE CARTOES DE DEBITO
+404;6421-2/00;BANCOS COMERCIAIS
+405;6422-1/00;BANCOS     MULTIPLOS,     COM     CARTEIRA COMERCIAL
+406;6423-9/00;CAIXAS ECONOMICAS
+407;6431-0/00;BANCOS     MULTIPLOS,     SEM     CARTEIRA COMERCIAL
+408;6432-8/00;BANCOS DE INVESTIMENTO
+409;6433-6/00;BANCOS DE DESENVOLVIMENTO
+410;6434-4/00;AGENCIAS DE FOMENTO
+411;6613-4/00;Administração de cartões de crédito
+412;6435-2/02;ASSOCIACOES        DE        POUPANCA        E EMPRESTIMO
+413;6450-6/00;SOCIEDADES DE CAPITALIZACAO
+414;6619-3/04;CAIXAS ELETRONICOS
+415;6499-9/05;CONCESSAO DE CREDITO PELAS OSCIP
+416;6436-1/00;SOCIEDADES                DE                CREDITO, FINANCIAMENTO      E      INVESTIMENTO      - FINANCEIRAS
+417;6437-9/00;SOCIEDADES         DE         CREDITO         AO MICROEMPREENDEDOR
+418;6440-9/00;ARRENDAMENTO MERCANTIL
+419;6619-3/01;SERVIÇOS DE LIQUIDAÇÃO E CUSTÓDIA
+420;6619-3/02;CORRESPONDENTES     DE     INSTITUICOES FINANCEIRAS
+421;6499-9/99;"OUTRAS      ATIVIDADES      DE      SERVICOS FINANCEIROS         NAO         ESPECIFICADAS
+ANTERIORMENTE"
+422;6438-7/01;BANCOS DE CAMBIO
+423;6438-7/99;OUTRAS                 INSTITUICOES                DE INTERMEDIACAO     NÃO-MONETARIA     NAO ESPECIFIDAS ANTERIORMENTE
+424;6435-2/01;SOCIEDADES DE CREDITO IMOBILIARIO
+425;6499-9/04;CAIXAS        DE        FINANCIAMENTO        DE CORPORACOES
+426;4912-4/02;"Transporte  ferroviário  de  passageiros  municipal
+e em região metropolitana"
+427;4912-4/03;Transporte metroviário
+428;4921-3/01;"Transporte  rodoviário  coletivo  de  passageiros,
+com itinerário fixo, municipal"
+429;4929-9/01;Transporte  rodoviário  coletivo  de  passageiros, sob regime de fretamento, municipal
+430;4930-2/01;"Transporte rodoviário de carga, exceto produtos
+perigosos e mudanças, municipal"
+431;4930-2/03;Transporte rodoviário de produtos perigosos
+432;5021-1/01;"Transporte   por   navegação   interior   de   carga,
+municipal, exceto travessia"
+433;5091-2/01;"Transporte     por     navegação     de     travessia,
+municipal"
+434;5099-8/01;Transporte aquaviário para passeios turísticos
+435;4923-0/01;Serviço de táxi
+436;4923-0/02;"Serviço de transporte de passageiros  -  locação
+de automóveis com motorista"
+437;4924-8/00;Transporte escolar
+438;4940-0/00;TRANSPORTE DUTOVIÁRIO
+439;4950-7/00;Trens turísticos, teleféricos e similares
+440;5022-0/01;"Transporte      por      navegação      interior      de passageiros   em   linhas   regulares,   municipal,
+exceto travessia"
+441;5112-9/99;"Outros    serviços    de    transporte    aéreo    de
+passageiros não-regular"
+442;5229-0/02;Serviços de reboque de veículos
+443;6920-6/02;Atividades  de  consultoria  e  auditoria  contábil  e tributária
+444;8299-7/01;Medição de consumo de energia elétrica, gás e água
+445;0311-6/04;ATIVIDADES  DE  APOIO  A  PESCA  EM  AGUA SALGADA
+446;0312-4/04;ATIVIDADES  DE  APOIO  A  PESCA  EM  AGUA DOCE
+447;0321-3/05;ATIVIDADES DE APOIO A AQUICULTURA EM AGUA SALGADA E SALOBRA
+448;0322-1/07;Atividades de apoio à aquicultura em água doce
+449;6399-2/00;Outras  atividades  de  prestação  de  serviços  de informação não especificadas anteriormente
+450;7020-4/00;Atividades      de      consultoria      em      gestão empresarial,      exceto      consultoria      técnica específica
+451;7319-0/04;Consultoria em publicidade
+452;7320-3/00;Pesquisas de mercado e de opinião pública
+453;9430-8/00;Atividades  de  associação  de  defesa  de  direitos sociais
+454;7490-1/01;Serviços de tradução, interpretação e similares
+455;5229-0/01;Serviços   de   apoio   ao   transporte   por   táxi, inclusive centrais de chamada
+456;5812-3/00;Edição de jornais
+457;5813-1/00;Edição de revistas
+458;5819-1/00;Edição  de  cadastros,  listas  e  outros  produtos gráficos
+459;5821-2/00;Edição integrada à impressão de livros
+460;5822-1/00;Edição integrada à impressão de jornais
+461;5823-9/00;Edição integrada à impressão de revistas
+462;5829-8/00;Edição   integrada   à   impressão   de   cadastros, listas e outros produtos gráficos
+463;8219-9/99;"Preparação     de     documentos     e     serviços especializados   de   apoio   administrativo   não
+especificados anteriormente"
+464;8220-2/00;Atividades de teleatendimento
+465;8299-7/99;"Outras     atividades     de     serviços     prestados principalmente  às  empresas  não  especificadas
+anteriormente"
+466;7810-8/00;Seleção e agenciamento de mão-de-obra
+467;7820-5/00;Locação de mão-de-obra temporária
+468;7830-2/00;Fornecimento  e  gestão  de  recursos  humanos para terceiros
+469;8111-7/00;Serviços   combinados   para   apoio   a   edifícios, exceto condomínios prediais
+470;5911-1/02;Produção de filmes para publicidade
+471;7311-4/00;Agências de publicidade
+472;7319-0/01;Criação e montagem de estandes para feiras e exposições
+473;7319-0/02;Promoção de vendas
+474;7319-0/03;Marketing direto
+475;7319-0/99;Outras      atividades      de      publicidade      não especificadas anteriormente
+476;5310-5/02;Atividades de franqueadas do Correio Nacional
+477;7740-3/00;Gestão de ativos intangíveis não-financeiros
+478;6621-5/01;Peritos e avaliadores de seguros
+479;6911-7/02;Atividades auxiliares da justiça
+480;7119-7/04;"Serviços   de   perícia   técnica   relacionados   à
+segurança do trabalho"
+481;7120-1/00;Testes e análises técnicas
+482;5620-1/02;Serviços    de    alimentação    para    eventos    e recepções – bufê
+483;6611-8/01;Bolsa de valores
+484;6611-8/02;Bolsa de mercadorias
+485;6611-8/03;Bolsa de mercadorias e futuros
+486;6611-8/04;"Administração     de     mercados     de     balcão
+organizados"
+487;6493-0/00;"Administração  de  consórcios  para  aquisição  de
+bens e direitos"
+488;6630-4/00;"Atividades   de   administração   de   fundos   por
+contrato ou comissão"
+489;6822-6/00;"Gestão     e     administração     da     propriedade
+imobiliária"
+490;8660-7/00;Atividades de apoio à gestão de saúde
+491;8299-7/04;Leiloeiros independentes
+492;6911-7/01;Serviços advocatícios
+493;6621-5/02;Auditoria e consultoria atuarial
+494;6920-6/01;Atividades de contabilidade
+495;8291-1/00;"Atividades     de     cobrança     e     informações
+cadastrais"
+496;6491-3/00;Sociedades de fomento mercantil - factoring
+497;6629-1/00;Atividades      auxiliares      dos      seguros,      da previdência   complementar   e   dos   planos   de saúde não especificadas anteriorme
+498;8299-7/06;Casas lotéricas
+499;9200-3/01;Casas de bingo
+500;5030-1/01;Navegação de apoio marítimo
+501;5030-1/02;Navegação de apoio portuário
+502;5231-1/01;Administração da infra-estrutura portuária
+503;5250-8/05;OPERADOR DE TRANSPORTE MULTIMODAL OTM
+504;5239-7/00;Atividades auxiliares dos transportes aquaviários não especificadas anteriormente
+505;5240-1/01;Operação    dos    aeroportos    e    campos    de aterrissagem
+506;5222-2/00;Terminais rodoviários e ferroviários
+507;6912-5/00;Cartórios
+508;7410-2/01;Design
+509;4329-1/01;Instalação de painéis publicitários
+510;8299-7/03;"Serviços   de   gravação   de   carimbos,   exceto
+confecção"
+511;9529-1/02;Chaveiros
+512;3299-0/03;"Fabricação   de   letras,   letreiros   e   placas   de
+qualquer material, exceto luminosos"
+513;3299-0/04;Fabricação de painéis e letreiros luminosos
+514;9603-3/03;Serviços de sepultamento
+515;9603-3/04;Serviços de funerárias
+516;9603-3/05;Serviços de somatoconservação
+517;9603-3/99;Atividades   funerárias   e   serviços   relacionados não especificados anteriormente
+518;9603-3/02;Serviços de cremação
+519;6511-1/02;Planos de auxílio-funeral
+520;9603-3/01;Gestão e manutenção de cemitérios
+521;5310-5/01;Atividades do Correio Nacional
+522;5320-2/01;Serviços de malote não realizados pelo Correio Nacional
+523;5320-2/02;Serviços de entrega rápida
+524;8012-9/00;Atividades de transporte de valores
+525;8800-6/00;Serviços de assistência social sem alojamento
+526;9101-5/00;Atividades de bibliotecas e arquivos
+527;9311-5/00;Gestão de instalações de esportes
+528;7119-7/03;"Serviços   de   desenho   técnico   relacionados   à
+arquitetura e engenharia"
+529;5250-8/01;Comissaria de despachos
+530;5250-8/02;Atividades de despachantes aduaneiros
+531;8030-7/00;Atividades de investigação particular
+532;9002-7/01;"Atividades    de    artistas    plásticos,    jornalistas
+independentes e escritores"
+533;9102-3/01;Atividades   de   museus   e   de   exploração   de lugares e prédios históricos e atrações similares
+534;3211-6/01;Lapidação de gemas
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
