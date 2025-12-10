@@ -69,9 +69,10 @@
     let termo = $state("")
     let carregando = $state(false)
     let comboBoxAberto = $state(false)
-
-    let selecionarCnaeId = $state<number[]> ()
+    
     let descricao = $state("")
+    let cnaeCodigo = $state("")
+    let selecionarCnaeId = $state<number[]> ()
     async function listarTipo() {
         try{
             const res = await getApi("/api/tipo/empresa/listar")
@@ -84,8 +85,6 @@
 
     async function buscarCnae(texto: string) {
 
-      
-
         const params = new URLSearchParams({
             termo: texto,
             page: "0",
@@ -94,9 +93,7 @@
         try {
             const res = await getApi(`/api/cnae/consultar?${params.toString()}`)
             cnae = res.content
-            console.log(cnae)
         } catch (error) {
-            console.error("Erro ao buscar CNAE:", error)
             cnae = [];
         }
     }
@@ -287,7 +284,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-2">
             <div class="flex flex-col">
                 <label for="" class="text-[#94AECA] font-bold text-md">CNAE <span class="text-red-500">*</span></label>
-                <input type="text" bind:value={termo} class="border-[#073216] rounded-lg" placeholder="Classificação Nacional de Atividades" autocomplete="off" required 
+                <input type="text" bind:value={cnaeCodigo} class="border-[#073216] rounded-lg" placeholder="Classificação Nacional de Atividades" autocomplete="off" required 
                 onfocus={() => {
                     comboBoxAberto = true
                     if(cnae.length === 0){
@@ -298,8 +295,8 @@
                     (e) => {
                         const input = e.currentTarget as HTMLInputElement;
                         const valorDigitado = input.value
-                        const valorFormatado = formatarCNAE(valorDigitado)
-                        termo = valorFormatado;
+                        cnaeCodigo  = formatarCNAE(valorDigitado)
+                        termo = valorDigitado;
                         comboBoxAberto = true;
 
                         buscarCnae(termo);
@@ -321,7 +318,7 @@
                                 {#each cnae as  cnaes}
                                     <li class="mt-2 ml-2 mb-2">
                                         <button type="button"  onmousedown={() => selecionarCnae(cnaes)}>
-                                            <span class="text-[1rem]">  Código: {cnaes.codigo}</span> - <span class="text-[1rem] text-semibold "> Descrição: {cnaes.descricao}</span>
+                                            <span class="text-[1rem]">  Código: {cnaes.codigo}</span> - <span class="text-[1rem] text-semibold "> Descrição: <span class="text-red-500">*</span> {cnaes.descricao}</span>
                                         </button>
                                     </li>
                                 {/each}
@@ -331,8 +328,14 @@
                 {/if}
             </div>
             <div class="flex flex-col md:col-span-2">
-                <label for="" class="text-[#94AECA] font-bold text-md ">Descrição</label>
-                <input type="text" bind:value={descricao} class="border-[#073216] rounded-lg text-sm py-2.5" placeholder="Classificação Nacional de Atividades" autocomplete="off" disabled required>
+                <label for="" class="text-[#94AECA] font-bold text-md ">Descrição <span class="text-red-500">*</span></label>
+                <input type="text" bind:value={descricao} class="border-[#073216] rounded-lg text-sm py-2.5" placeholder="Classificação Nacional de Atividades" autocomplete="off"
+                 oninput={(e) => {
+                    const valor = (e.currentTarget as HTMLInputElement).value;
+                    termo = valor
+                    comboBoxAberto = true
+                    buscarCnae(termo)
+                }}>
             </div>
         </div>
         
