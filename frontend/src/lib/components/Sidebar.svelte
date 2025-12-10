@@ -42,7 +42,8 @@
 			{label: "Configurar Categoria", href:"/cadastrar/categoria_empresa"},
 			{label: "Configurar Tipo", href: "/cadastrar/tipo_empresa"},
 			{label: "Cadastrar Usuário", href: "/cadastrar/usuario"},
-			{label: "Cadastrar Cidade", href: "/cadastrar/cidade"}
+			{label: "Cadastrar Cidade", href: "/cadastrar/cidade"},
+			{label: "Cadastrar CNAE", href: "/cadastrar/cnae"}
 		]
 	}
 ]
