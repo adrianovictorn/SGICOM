@@ -28,19 +28,19 @@
 </script>
 
 
-<div class="bg-[rgb(59,130,246)] hover:bg-[rgb(37,99,235)]h-screen transition-colors duration-300">
+<div class="bg-neutral-200 hover:bg-[rgb(37,99,235)]h-screen transition-colors duration-300">
     
     <main class="flex items-center min-h-screen  justify-center  ">
         
-        <form onsubmit={entrar} class="w-full max-w-md space-y-4 grid grid-cols-1 gap-3 bg-indigo-300 shadow-2xl p-10 rounded-lg ">
+        <form onsubmit={entrar} class="w-full max-w-md space-y-4 grid grid-cols-1 gap-3 bg-[#0f2037] shadow-2xl p-10 rounded-lg ">
             <div class="flex flex-col items-center text-center gap-2">
-                <img src={brasao} alt="">
-                <h1 class="text-xl font-extrabold text-gray-900 ">SGICOM</h1>
+                <img src={brasao} alt="" class="w-24">
+                <h1 class="text-xl font-extrabold text-gray-900 text-white">SGICOM</h1>
             </div>
             <p class="text-sm text-center">  Sistema de Gestão Industrial & Comercial Municipal</p>
             <div class="relative grid grid-cols-1 py-2">
                
-                <label for="cpf" class="font-semibold text-gray-700 text-sm mb-2">CPF</label>
+                <label for="cpf" class="font-semibold text-white text-sm mb-2">CPF</label>
                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" absolute left-2 top-14  -translate-y-1/2 w-5 h-5 text-gray-500">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
@@ -59,7 +59,7 @@
                 <button>Entrar</button>
                 
             </div>
-            <div class="grid grid-cols-1 text-center"><a href="#" class="text-indigo-800 ">Esqueci minha senha</a></div>
+            <div class="grid grid-cols-1 text-center"><a href="#" class="text-indigo-300 ">Esqueci minha senha</a></div>
             {#if error}
                 <p>{error}</p>
             {/if}

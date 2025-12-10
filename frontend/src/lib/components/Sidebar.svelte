@@ -34,6 +34,16 @@
 		id: "RELATORIO",
 		label: "Relatório",
 		children: []
+	},
+	{
+		id: "CONFIGURACAO",
+		label: "Configuração",
+		children: [
+			{label: "Configurar Categoria", href:"/cadastrar/categoria_empresa"},
+			{label: "Configurar Tipo", href: "/cadastrar/tipo_empresa"},
+			{label: "Cadastrar Usuário", href: "cadastrar/usuario"},
+			{label: "Cadastrar Cidade", href: "cadastrar/cidade"}
+		]
 	}
 ]
 

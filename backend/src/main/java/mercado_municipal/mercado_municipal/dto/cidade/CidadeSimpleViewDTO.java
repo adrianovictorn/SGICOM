@@ -10,7 +10,7 @@ public record CidadeSimpleViewDTO(
  
     
     public static CidadeSimpleViewDTO fromEntity(Cidade cidade){
-        return new CidadeSimpleViewDTO(cidade.getId(),
+        return new CidadeSimpleViewDTO(cidade.getId(),  
         cidade.getNome(),
         cidade.getCodigoIbge());
     }
