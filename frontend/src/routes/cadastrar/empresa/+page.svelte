@@ -3,11 +3,12 @@
 	import Content from "$lib/components/Content.svelte";
 	import { onMount } from "svelte";
 
+    type OrigemBusca = "codigo" | "descricao";
+    
     interface TipoEmpresa {
         id: number
         tipo: string
     }
-
 
     interface Cnae {
         id: number
@@ -69,7 +70,7 @@
     let termo = $state("")
     let carregando = $state(false)
     let comboBoxAberto = $state(false)
-    
+    let origemBusca = $state<OrigemBusca> ("codigo");
     let descricao = $state("")
     let cnaeCodigo = $state("")
     let selecionarCnaeId = $state<number[]> ()
@@ -92,7 +93,8 @@
         })
         try {
             const res = await getApi(`/api/cnae/consultar?${params.toString()}`)
-            cnae = res.content
+            const lista = Array.isArray(res) ? res : (res?.content ?? []);
+            cnae = lista
         } catch (error) {
             cnae = [];
         }
@@ -176,6 +178,8 @@
         novoPontoReferencia = ""
         novoLogradouro = ""
         novoCidadeId = ""
+        cnaeCodigo = ""
+        descricao = ""
    }
 
    function limparErros(){
@@ -258,8 +262,9 @@
 
    function selecionarCnae(cnae: Cnae){
     selecionarCnaeId = [cnae.id];
-    termo = `${cnae.codigo}`
-    descricao = `${cnae.descricao}`
+    cnaeCodigo = cnae.codigo
+    descricao = cnae.descricao
+    termo = cnae.codigo
     comboBoxAberto = false
    }
 </script>
@@ -295,6 +300,10 @@
                     (e) => {
                         const input = e.currentTarget as HTMLInputElement;
                         const valorDigitado = input.value
+
+                        origemBusca = "codigo"
+                        selecionarCnaeId =[]
+                        
                         cnaeCodigo  = formatarCNAE(valorDigitado)
                         termo = valorDigitado;
                         comboBoxAberto = true;
@@ -318,7 +327,7 @@
                                 {#each cnae as  cnaes}
                                     <li class="mt-2 ml-2 mb-2">
                                         <button type="button"  onmousedown={() => selecionarCnae(cnaes)}>
-                                            <span class="text-[1rem]">  Código: {cnaes.codigo}</span> - <span class="text-[1rem] text-semibold "> Descrição: <span class="text-red-500">*</span> {cnaes.descricao}</span>
+                                            <span class="text-[0.9rem]">  Código: {cnaes.codigo}  -  Descrição: {cnaes.descricao}</span> 
                                         </button>
                                     </li>
                                 {/each}
@@ -332,8 +341,12 @@
                 <input type="text" bind:value={descricao} class="border-[#073216] rounded-lg text-sm py-2.5" placeholder="Classificação Nacional de Atividades" autocomplete="off"
                  oninput={(e) => {
                     const valor = (e.currentTarget as HTMLInputElement).value;
+
+                    origemBusca = "descricao"
+                    selecionarCnaeId =[]
                     termo = valor
                     comboBoxAberto = true
+                    
                     buscarCnae(termo)
                 }}>
             </div>
@@ -423,7 +436,7 @@
           
             <div class="flex flex-col">
                 <label for="" class="text-[#94AECA] font-bold text-md">Ponto de Referência</label>
-                <input type="text" bind:value={novoPontoReferencia}   class="border-[#073216] rounded-lg" placeholder="Exemplo: Próximo a Escola " required>
+                <input type="text" bind:value={novoPontoReferencia}   class="border-[#073216] rounded-lg" placeholder="Exemplo: Próximo a Escola ">
             </div>
 
         </div>

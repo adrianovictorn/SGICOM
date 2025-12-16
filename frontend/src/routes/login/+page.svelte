@@ -25,6 +25,41 @@
              error = 'Login inválido';
         }
     }
+
+    function somenteNumeros(texto: string): string{
+        return texto.replace(/\D/g, "")
+    }
+
+    function formatarCPF(texto: string): string{
+        const digitos = somenteNumeros(texto).slice(0,11)
+      
+        let formatado = ""
+
+
+        if(texto.length >= 11){
+            if(digitos.length > 0){
+                formatado = digitos.substring(0,3)
+            }
+
+            if(digitos.length >= 4){
+                formatado += "." + digitos.substring(3,6)
+            }
+
+            if(digitos.length >= 7){
+                formatado += "." + digitos.substring(6,9)
+            }
+
+            if(digitos.length >= 10){
+                formatado += "-" + digitos.substring(9,11)
+            }
+        }else{
+            formatado = texto
+        }
+
+        return formatado;
+    }
+
+   
 </script>
 
 
@@ -46,7 +81,12 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
 
-                <input type="text" name="" id="cpf" bind:value={usernameInput}  placeholder="Digite seu CPF..." class="rounded bg-indigo-100 border-gray-300 shadow-2xl pl-9  ">
+                <input type="text" name="" id="cpf" bind:value={usernameInput}  placeholder="Digite seu CPF..." class="rounded bg-indigo-100 border-gray-300 shadow-2xl pl-9" 
+                oninput={(e) => {
+                    const input = e.currentTarget as HTMLInputElement;
+                    const valorDigitado = input.value
+                    usernameInput = formatarCPF(valorDigitado)
+                }}>
             </div>
             <div class=" relative grid grid-cols-1">
                 <label for="senha" class="font-semibold text-gray-700 text-sm mb-2">Senha</label>

@@ -71,6 +71,20 @@ public class UsuarioService {
         return UsuarioSimpleViewDTO.fromEntity(usuarioExistente);
     }
 
+    public UsuarioSimpleViewDTO ativarInvativarUsuario(Long id){
+        Usuario usuarioExistente = usuarioRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Usuário não encontrado !"));
+
+        if (usuarioExistente.getAtivo() == true) {
+            usuarioExistente.setAtivo(false);
+        }
+        else{
+            usuarioExistente.setAtivo(true);
+        }
+
+        usuarioRepository.save(usuarioExistente);
+        return UsuarioSimpleViewDTO.fromEntity(usuarioExistente);
+    }
+
     public void deletarUsuario(Long id){
         Usuario usuarioExistente = usuarioRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Usuário não encontrado"));
         usuarioRepository.delete(usuarioExistente);

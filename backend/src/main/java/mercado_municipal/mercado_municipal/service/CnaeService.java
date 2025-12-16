@@ -53,6 +53,7 @@ public class CnaeService {
         }
         return cnaeRepository.findAll(pageable).map(CnaeSimpleViewDTO::fromEntity);
     } 
+    
     public CnaeViewDTO atualizarCnae(CnaeUpdateDTO dto, Long id){
 
         Cnae cnaeExistente = cnaeRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("CNAE não encontrado no sistema !"));

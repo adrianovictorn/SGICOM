@@ -17,7 +17,6 @@
         payload = auth.getPayload() as JwtPayload | null;
         const letra = payload?.nome
         const role = payload?.roles ?? []
-        console.log(payload)
         if (letra){
             primeiraLetra = letra.trim().charAt(0).toUpperCase();
         } 
