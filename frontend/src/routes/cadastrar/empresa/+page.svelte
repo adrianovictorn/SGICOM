@@ -149,7 +149,14 @@
         try{
             const res = await postApi("/api/empresa/cadastrar", payload)
 
-           alert("Nova empresa cadastrada com sucesso !")
+            if(somenteNumeros(novoCnpj).length  > 14){
+              alert("Nova empresa cadastrada com sucesso !")
+            }
+
+             if(somenteNumeros(novoCnpj).length > 11){
+              alert("Nova feirante cadastrada com sucesso !")
+            }
+
             limparCampos()
             limparErros()
         } catch(error){
@@ -232,6 +239,30 @@
     return formatado
    }
 
+   function formatarCPF(valor: string):string{
+        let digitos = somenteNumeros(valor).slice(0,11)
+
+        let formatado = "";
+
+        if(digitos.length > 0){
+            formatado = digitos.substring(0,3)
+        }
+
+        if(digitos.length >= 4){
+            formatado += "." + digitos.substring(3,6)
+        }
+
+        if(digitos.length >= 7){
+            formatado += "." + digitos.substring(6,9)
+        }
+
+        if(digitos.length >= 10){
+            formatado += "-" + digitos.substring(9,11)
+        }
+    
+        return formatado
+   }
+
    function formatarCNPJ(valor: string): string{
         let digitos = somenteNumeros(valor).slice(0, 14)
 
@@ -258,6 +289,13 @@
         }
 
         return formatado
+   }
+
+   function formatarCNPJouCPF(termo: string): string{
+    const digitos = somenteNumeros(termo).slice(0,14)
+
+    if(digitos.length <= 11) return formatarCPF(digitos);
+    return formatarCNPJ(digitos)
    }
 
    function selecionarCnae(cnae: Cnae){
@@ -354,12 +392,12 @@
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-2">
             <div class="flex flex-col">
-                <label for="" class="text-[#94AECA] font-bold text-md">CNPJ <span class="text-red-500">*</span></label>
+                <label for="" class="text-[#94AECA] font-bold text-md">Digite o CPF ou CNPJ<span class="text-red-500">*</span></label>
                 <input type="text" bind:value={novoCnpj}  class="border-[#073216] rounded-lg" placeholder="Cadastro Nacional de Pessoa Jurídica" required
                 oninput={
                     (e) => {
                         const target = e.target as HTMLInputElement;
-                        novoCnpj = formatarCNPJ(target.value)
+                        novoCnpj = formatarCNPJouCPF(target.value)
                     }
                 }
                 >
