@@ -69,6 +69,7 @@ public class EmpresaService {
         novaEmpresa.setNumeroDeColaboradores(dto.numeroColaboradores());
         novaEmpresa.setAtividade(dto.atividade());
 
+        Empresa empresaSalva = empresaRepository.save(novaEmpresa);
 
         Endereco novoEndereco = new Endereco();
         novoEndereco.setCep(enderecoCreateDTO.cep());
@@ -78,10 +79,9 @@ public class EmpresaService {
         novoEndereco.setNumero(enderecoCreateDTO.numero());
         novoEndereco.setNomeDoLocal(enderecoCreateDTO.nomeLocal());
         novoEndereco.setPontoReferencia(enderecoCreateDTO.pontoReferencia());
+        novoEndereco.setEmpresa(empresaSalva);
 
         novaEmpresa.adicionarEndereco(novoEndereco);
-
-        Empresa empresaSalva = empresaRepository.save(novaEmpresa);
         return EmpresaSimpleViewDTO.fromEntity(empresaSalva);
     }
 

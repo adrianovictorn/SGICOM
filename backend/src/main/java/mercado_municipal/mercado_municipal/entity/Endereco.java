@@ -53,8 +53,12 @@ public class Endereco {
     )
     private Cidade cidade;
 
-    
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(
+        name = "pessoa_id"
+    )
+    private Pessoa pessoa;
 }
 
 
