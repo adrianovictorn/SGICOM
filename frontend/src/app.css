@@ -3,7 +3,7 @@
 @plugin '@tailwindcss/forms';
 
 label {
-	@apply text-[#94AECA] font-bold text-base;
+	@apply text-[#94AECA] font-semibold text-base;
 }
 
 input {
@@ -19,5 +19,5 @@ p{
 }
 
 h2{ 
-    @apply p-3 text-[#106F31] text-shadow-2xs font-bold text-2xl
+    @apply p-3 text-[#3aab30] text-shadow-2xs font-semibold text-2xl
 }

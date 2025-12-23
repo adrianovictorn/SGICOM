@@ -43,6 +43,14 @@ public class PessoaController {
         return ResponseEntity.ok(pessoaService.listarPessoas(page, size));
     }
 
+
+    @GetMapping("/buscar/por/cpf")
+    public ResponseEntity<PessoaViewDTO> buscarPorCPF(
+        @RequestParam String cpf){
+        return ResponseEntity.ok(pessoaService.buscarPorCPF(cpf));
+    }
+
+
     @GetMapping("/buscar/por/nome")
     public ResponseEntity<Page<PessoaSimpleViewDTO>> buscarPorNome(
         @RequestParam(required = false, name = "cachorro") String nome,
@@ -59,5 +67,14 @@ public class PessoaController {
         @RequestParam(defaultValue = "10", name = "size") int size
     ){
         return ResponseEntity.ok(pessoaService.buscarPorNomeouCPF(page, size, termo));
+    }
+
+    @GetMapping("/buscar/por/cidade")
+    public ResponseEntity<Page<PessoaSimpleViewDTO>> buscarPorCidade(
+        @RequestParam Long id,
+        @RequestParam(defaultValue = "0", name = "page") int page,
+        @RequestParam(defaultValue = "10", name = "size") int size
+    ){
+        return ResponseEntity.ok(pessoaService.buscarPorCidadeId(page, size, id));
     }
 }

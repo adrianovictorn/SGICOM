@@ -198,7 +198,7 @@
     </section>
 
     <section class="bg-white grid grid-cols-1 p-5 mt-5 rounded-lg">
-        <div class="rounded-lg flex flex-col bg-[#232a33] py-4 text-white  text-center relative overflow-x-auto">
+        <div class="rounded-lg flex flex-col bg-[#173457] py-4 text-white  text-center relative overflow-x-auto">
             <table class="min-w-[600px] text-xs md:text-sm w-full ">
                 <thead>
                     <tr class=" ">

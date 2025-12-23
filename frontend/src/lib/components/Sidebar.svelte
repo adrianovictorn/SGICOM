@@ -71,7 +71,7 @@
 			{#each menuOptions as menu}
 				<div class="flex ">
 					<button type="button" class="text-white hover:bg-[#88A2C5] flex rounded-lg text-lg text-center items-center p-1 border-2 border-transparent  w-60 md:w-65 " class:border-white ={toggle === menu.id} class:bg-[#88A2C5] = {toggle === menu.id} onclick={()=> toggleFunction(menu.id)}>
-						<span class="w-45 ml-5 flex justify-start p-1 font-semibold">{menu.label}</span>
+						<span class="w-45 ml-5 flex justify-start p-1 font-light text-[1rem]">{menu.label}</span>
 						<div class="flex justify-end mr-6" hidden={menu.children.length === 0}>
 							<svg class="w-6 h-6 text-white dark:text-white transform transition-transform duration-300 {toggle === menu.id ? 'rotate-180': ""}"   aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
 							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>

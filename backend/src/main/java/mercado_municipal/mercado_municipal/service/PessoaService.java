@@ -7,6 +7,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import jakarta.persistence.EntityNotFoundException;
 import mercado_municipal.mercado_municipal.dto.pessoa.PessoaCreateDTO;
@@ -77,16 +78,16 @@ public class PessoaService {
         return pessoaRepository.findAll(pagina).map(PessoaSimpleViewDTO::fromEntity);
     }
 
-
     /// [BUSCAS]
     public PessoaSimpleViewDTO buscarPorId(Long id){
         Pessoa pessoaExistente = pessoaRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Pessoa não encontrada !"));
         return PessoaSimpleViewDTO.fromEntity(pessoaExistente);
     }
     
-    public PessoaSimpleViewDTO buscarPorCPF(String cpf){
-        Pessoa pessoaExistente =  pessoaRepository.findByCpf(cpf).orElseThrow(() -> new EntityNotFoundException("CPF inválido ou pessoa não encontrada !"));
-        return PessoaSimpleViewDTO.fromEntity(pessoaExistente);
+    @Transactional(readOnly = true)
+    public PessoaViewDTO buscarPorCPF(String cpf){
+        Pessoa pessoaExistente =  pessoaRepository.findWithEnderecosByCpf(cpf).orElseThrow(() -> new EntityNotFoundException("CPF inválido ou pessoa não encontrada !"));
+        return PessoaViewDTO.fromEntity(pessoaExistente);
     }
 
     public Page<PessoaSimpleViewDTO> buscarPorNome(String nome, int size, int page){
@@ -99,9 +100,22 @@ public class PessoaService {
     }
 
     public Page<PessoaSimpleViewDTO> buscarPorNomeouCPF(int size, int page, String termo){
-        Pageable pagina = PageRequest.of(size, page, Sort.by("nome").ascending());
+        Pageable pagina = PageRequest.of(page, size, Sort.by("nome").ascending());
 
+        if (termo == null || termo.isBlank()) {
+            return pessoaRepository.findAll(pagina).map(PessoaSimpleViewDTO::fromEntity);
+        }
         return pessoaRepository.findByNomeContainingIgnoreCaseOrCpfContaining(termo, termo, pagina).map(PessoaSimpleViewDTO::fromEntity);
+    }
+
+    public Page<PessoaSimpleViewDTO> buscarPorCidadeId(int page, int size, Long id){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("nome").ascending());
+
+        if (id == null) {
+            return Page.empty(pagina);
+        }
+
+        return pessoaRepository.findDistinctByEnderecos_CidadeId(id, pagina).map(PessoaSimpleViewDTO::fromEntity);
     }
 
     /// [DELETAR]
