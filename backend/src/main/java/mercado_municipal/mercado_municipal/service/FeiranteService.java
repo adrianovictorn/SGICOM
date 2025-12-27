@@ -1,9 +1,14 @@
 package mercado_municipal.mercado_municipal.service;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import jakarta.persistence.EntityNotFoundException;
 import mercado_municipal.mercado_municipal.dto.feirante.FeiranteCreateDTO;
+import mercado_municipal.mercado_municipal.dto.feirante.FeiranteSimpleViewDTO;
 import mercado_municipal.mercado_municipal.dto.feirante.FeiranteViewDTO;
 import mercado_municipal.mercado_municipal.entity.CategoriaEmpresa;
 import mercado_municipal.mercado_municipal.entity.Cidade;
@@ -25,16 +30,18 @@ public class FeiranteService {
     private final PessoaRepository pessoaRepository;
     private final EnderecoRepository enderecoRepository;
     private final CidadeRepository cidadeRepository;
+    private final MatriculaService matriculaService;
 
     
 
     public FeiranteService(FeiranteRepository feiranteRepository, CategoriaEmpresaRepository categoriaRepository,
-            PessoaRepository pessoaRepository, CidadeRepository cidadeRepository, EnderecoRepository enderecoRepository) {
+            PessoaRepository pessoaRepository, CidadeRepository cidadeRepository, EnderecoRepository enderecoRepository, MatriculaService matriculaService) {
         this.feiranteRepository = feiranteRepository;
         this.categoriaRepository = categoriaRepository;
         this.pessoaRepository = pessoaRepository;
         this.cidadeRepository = cidadeRepository;
         this.enderecoRepository = enderecoRepository;
+        this.matriculaService = matriculaService;
     }
 
 
@@ -64,7 +71,7 @@ public class FeiranteService {
         enderecoRepository.save(novoEndereco);
 
         Feirante novoFeirante = new Feirante();
-        novoFeirante.setMatricula(feiranteCreateDTO.matricula());
+        novoFeirante.setMatricula(matriculaService.gerar());
         novoFeirante.setBanca(feiranteCreateDTO.banca());
         novoFeirante.setCategoriaEmpresa(categoria);
         novoFeirante.setBox(feiranteCreateDTO.box());
@@ -74,5 +81,51 @@ public class FeiranteService {
         pessoaSalva.addEndereco(novoEndereco);
 
         return FeiranteViewDTO.fromEntity(feiranteSalva);
+    }
+
+    public Page<FeiranteSimpleViewDTO> listarFeirantes(int page, int size){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("Matricula"));
+        return feiranteRepository.findAll(pagina).map(FeiranteSimpleViewDTO::fromEntity);
+    }
+
+    public Page<FeiranteSimpleViewDTO> buscarPorMatricula(String matricula, int page, int size){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("Matricula"));
+
+        if (matricula == null || matricula.isBlank()) {
+            return feiranteRepository.findAll(pagina).map(FeiranteSimpleViewDTO::fromEntity);
+        }
+        return feiranteRepository.findByMatriculaContainingIgnoreCase(pagina, matricula).map(FeiranteSimpleViewDTO::fromEntity);
+    }
+
+    public Page<FeiranteSimpleViewDTO> buscarBoxPor(Boolean box, int page, int size){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("Matricula"));
+        if (box == true) {
+            return feiranteRepository.findByBox(pagina, true).map(FeiranteSimpleViewDTO::fromEntity);
+        } else if (box == false) {
+            return feiranteRepository.findByBox(pagina, false).map(FeiranteSimpleViewDTO::fromEntity);
+
+        } else{
+            return feiranteRepository.findAll(pagina).map(FeiranteSimpleViewDTO::fromEntity);
+        }
+    }
+
+    public Page<FeiranteSimpleViewDTO> buscarPorBanca(int page, int size, String banca){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("Matricula"));
+
+        if (banca == null || banca.isBlank()) {
+            return feiranteRepository.findAll(pagina).map(FeiranteSimpleViewDTO::fromEntity);
+        }
+
+        return feiranteRepository.findByBancaContainingIgnoreCase(pagina, banca).map(FeiranteSimpleViewDTO::fromEntity);
+    }
+
+    public Page<FeiranteSimpleViewDTO> buscarMultiplosCampos(String termo, int page, int size){
+        Pageable pagina = PageRequest.of(page, size, Sort.by("matricula").ascending());
+
+        if (termo != null && !termo.isBlank()) {
+           return feiranteRepository.findByMatriculaContainingIgnoreCaseOrCategoriaEmpresa_CategoriaOrBancaContainingIgnoreCase(termo, termo, termo, pagina).map(FeiranteSimpleViewDTO::fromEntity);
+        }
+
+        return feiranteRepository.findAll(pagina).map(FeiranteSimpleViewDTO::fromEntity);
     }
 }
